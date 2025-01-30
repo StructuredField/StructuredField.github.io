@@ -28,7 +28,7 @@
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
@@ -46,33 +46,94 @@
 <body>
 
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h2 class="title is-2 publication-title" style="margin-top: 0; margin-bottom: 0"><a href="https://www.fontspace.com/category/knit"><img src="https://see.fontimg.com/api/rf5/Lr5W/NzI3OTYwOGIyMjdjNGVkY2IwMWI4Y2ZkZWZjZDg5NTQudHRm/U3RydWN0dXJlZEZpZWxk/christmas-jumper.png?r=fs&h=158&w=2000&fg=000000&bg=FFFFFF&tb=1&s=79" alt="Knit fonts" width="500"></a></h2>
-          <h2 class="title is-2 publication-title" style="margin-top: 0">Unifying Structured Geometry and Radiance Field</h2>
-          <!-- <h2 class="title is-4 publication-title" style="color:#6e6e6e;margin-top: 2; margin-bottom: 2">NeurIPS 2022 (Spotlight)</h2> -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <style>
+              @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Montserrat:wght@800&family=Lora:wght@600&display=swap');
+              
+              .publication-title {
+                  text-align: center;
+                  position: relative;
+                  padding-bottom: 15px;
+                  margin: 1.5rem 0;
+              }
+              
+              .short-title {
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 3rem;
+                  font-weight: 800;  /* 加粗 */
+                  letter-spacing: -1px;
+                  margin-bottom: 8px;
+                  display: block;
+                  background: linear-gradient(135deg, #D72638 0%, #FF5733 100%);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* 适当阴影 */
+              }
+              
+              .long-title {
+                  font-family: 'Merriweather Sans', sans-serif;
+                  font-size: 2rem;
+                  font-weight: 700; /* 字体更“胖” */
+                  color: #333;
+                  display: block;
+                  margin-top: -5px;
+                  position: relative;
+                  padding-top: 10px;
+                  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1); /* 轻微阴影 */
+              }
+  
+              /* 作者部分 */
+              .publication-authors {
+                  font-family: 'Lora', serif;
+                  font-size: 1.2rem;
+                  font-weight: 600; /* 加粗 */
+                  color: #555;
+                  margin-top: 10px;
+              }
+  
+              .author-block {
+                  display: inline-block;
+                  margin-bottom: 5px;
+              }
+  
+              /* 超链接颜色 */
+              .author-block a {
+                  color: #D72638;
+                  text-decoration: none;
+                  font-weight: 700;
+              }
+  
+              .author-block a:hover {
+                  text-decoration: underline;
+              }
+  
+            </style>
+              
+            <h2 class="title is-2 publication-title">
+                <span class="short-title">StructuredField</span>
+                <span class="long-title">Unifying Structured Geometry and Radiance Field</span>
+            </h2>
+  
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Kaiwen Song</span>&nbsp;&nbsp;&nbsp;&nbsp;
+              <span class="author-block">Jinkai Cui</span>&nbsp;&nbsp;&nbsp;&nbsp;
+              <span class="author-block">Zherui Qiu</span>&nbsp;&nbsp;&nbsp;&nbsp;
+              <span class="author-block">
+                <a href="http://staff.ustc.edu.cn/~juyong/">Juyong Zhang</a>
+              </span>
+            </div>
+  
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">University of Science and Technology of China</span>
+            </div>
+  
+  
+  
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              Kaiwen Song<sup>1</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
-            <span class="author-block">
-              Jinkai Cui<sup>1</sup>
-            </span>&nbsp;&nbsp;&nbsp;&nbsp;
-            <span class="author-block">
-              Zherui Qiu<sup>1</sup>
-            </span>&nbsp;&nbsp;&nbsp;&nbsp;
-            <span class="author-block">
-              <a href="http://staff.ustc.edu.cn/~juyong/">Juyong Zhang</a><sup>1</sup>
-            </span>
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Science and Technology of China</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        
-          </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
@@ -500,12 +561,12 @@
 
 
 
-<section class="section" id="Acknowledgements">
+<!-- <section class="section" id="Acknowledgements">
   <div class="container is-max-desktop content">
     <h2 class="title">Acknowledgements</h2>
 
   </div>
-</section>
+</section> -->
 
 
 

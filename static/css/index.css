@@ -3,6 +3,27 @@ body {
 }
 
 
+.publication-title {
+  margin-top: 0;
+  text-align: left;
+  line-height: 1.3;
+}
+
+.short-title {
+  font-family: 'Inter', sans-serif; /* 现代感无衬线字体 */
+  font-size: 2rem; /* 增大字号 */
+  font-weight: 700; /* 加粗 */
+  color: #2C3E50; /* 深蓝色 */
+  display: block; /* 单独一行 */
+}
+
+.long-title {
+  font-family: 'Crimson Text', serif; /* 学术感衬线字体 */
+  font-size: 1.8rem;
+  color: #444; /* 柔和一点的黑色 */
+}
+
+
 .footer .icon-link {
     font-size: 25px;
     color: #000;
